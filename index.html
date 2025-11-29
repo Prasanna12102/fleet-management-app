@@ -9,12 +9,31 @@
             <label>Email:
                 <input type="email" id="email"/>
             </label>
-
+            <br></br>
             <label>Password:
                 <input type="password" id="password"/>
             </label>
+            <br></br>
 
             <button id="loginBtn"> Login</button>
+
+            <script>
+                const validEmail="admin@gmail.com";
+                const validPassword="admin1234";
+
+                document.getElementById("loginBtn").addEventListener("click",function(){
+                    const emailValue=document.getElementById("email").value;
+                    const passValue=document.getElementById("password").value;
+
+                    if (emailValue===validEmail && passValue==validPassword){
+                        alert("Login successful");
+                        window.location.href="admin.html";
+                    }
+                    else{
+                        alert("Wrong email or password");
+                    }
+                });
+            </script>
         </body>
     </head>
 </html>
