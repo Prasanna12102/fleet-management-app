@@ -44,6 +44,41 @@
                 <br></br>
 
                 <button id="addFleetBtn">Add Fleet</button>
+                <!-- </div> -->
+
+                <div class="main" id="cardsArea"></div>
+                </div>
+
+                <script>
+                    let fleet=[];
+                    const regNoInp=document.getElementById("regNo");
+                    const catInp=document.getElementById("category");
+                    const driverInp=document.getElementById("driver");
+                    const isAvailInp=document.getElementById("isAvail");
+                    const addBtn=document.getElementById("addFleetBtn");
+                    const cardsArea=document.getElementById("CardsArea");
+                    const imgSrc="vehicles.png";
+
+                    addBtn.addEventListener("click",function(){
+                        const reg=regNoInp.value.trim();
+                        const cat=catInp.value;
+                        const drv=driverInp.value.trim();
+                        const avl=isAvailInp.value;
+                        if(!reg||!cat||!drv||!avl){
+                            alert("Please fill all fields");
+                        }
+                        const vehicle={
+                            regNo:reg,
+                            category:cat,
+                            driver:drv,
+                            availability:avl
+                        };
+                        fleet.push(vehicle);
+                    })
+
+
+                </script>
+
 
                 <div class="main" id="cardsArea">
 
