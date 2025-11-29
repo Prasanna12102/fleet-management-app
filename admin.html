@@ -9,7 +9,42 @@
             </div>
             <div class="container">
                 <div class="sidebar"></div>
-                
+                <h3>Add Fleet</h3>
+
+                <label>Reg No of Vehicle:
+                    <input type="text" id="regNo">
+                </label>
+                <br></br>
+
+                <label>
+                    Category:
+                    <select id="category">
+                        <option value="">Select</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Car">Car</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Bus">Bus</option>
+
+                    </select>
+                </label>
+                <br></br>
+
+                <label>Driver Name:
+                    <input type="text" id="driver">
+
+                </label> 
+                <br></br>
+                <label>Is Available:
+                    <select id="isAvail">
+                        <option value="Available" >Available</option>
+                        <option value="Unavailable" >Unavailable</option>
+
+                    </select>
+                </label> 
+                <br></br>
+
+                <button id="addFleetBtn">Add Fleet</button>
+
                 <div class="main" id="cardsArea">
 
                 </div>
